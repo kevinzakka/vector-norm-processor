@@ -8,6 +8,4 @@ This is a **Verilog** implementation of a Vector Norm List Processor. VNLP compu
 
 ## Details
 
-<p align="center">
- <img src="./img/datapath.png" width="400px">
-</p>
+In progress...
