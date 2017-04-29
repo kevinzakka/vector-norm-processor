@@ -7,7 +7,7 @@
 This is a **Verilog** implementation of a Vector Norm List Processor. The VNLP processor computes the L2 norm of an n-dimensional complex vector of the form v = x + iy. Recall that the L2 norm of a multidimensional vector is defined as follows:
 
 <p align="center">
- <img src="./img/eq.PNG" width="400px">
+ <img src="./img/eq.PNG" width="100px">
 </p>
 
 ## Details
