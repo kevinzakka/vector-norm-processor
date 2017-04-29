@@ -18,5 +18,15 @@ The **x** and **y** values of the vector are stored in memory in the form of a d
  <img src="./img/linked_list.PNG" width="600px">
 </p>
 
-Each node in the list contains 4 words: the first two contains the next and previous pointers, and the last two store the x and y values. The first node in the list is stored at address 0 in memory, while the last node is stored at address A. There are 512 words in memory. Hence memory can contain at most 512/4 = 128 nodes, and therefore the maximum length of vectors supported in this design is 128. The maximum value of address A is 508.
+Each node in the list contains 4 words: the first two contain the next and previous pointers and the last two contain the x and y values. The first node in the list is stored at address 0 in memory, while the last node is stored at address A. There are 512 words in memory. Hence memory can contain at most 512/4 = 128 nodes, and therefore the maximum length of vectors supported in this design is 128. Also note that the maximum value of address A is 508.
+
+## Implementation
+
+There are 4 main components that define the architecture of this design:
+
+- **VNLP**: the top level block
+- **Memory**: implements the memory block
+- **Datapath**: implements the datapath
+- **Control**: implements the controller
+
 
