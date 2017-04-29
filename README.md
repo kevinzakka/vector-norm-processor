@@ -26,6 +26,20 @@ Each word in memory is 24 bits wide. These bits are divided into 3 fields: the s
  <img src="./img/word.PNG" width="400px">
 </p>
 
+## File Hierarchy
+
+    data
+    ├── YOUR_DATASET_NAME
+    │   ├── A
+    │   |   ├── xxx.jpg (name doesn't matter)
+    │   |   ├── yyy.jpg
+    │   |   └── ...
+    │   └── B
+    │       ├── zzz.jpg
+    │       ├── www.jpg
+    │       └── ...
+    └── download_dataset.sh
+
 ## Implementation
 
 There are 4 main components that define the architecture of this design:
@@ -39,10 +53,10 @@ The **Datapath** consists of registers, control signals, multiplexors and a floa
 
 Meanwhile, the **Processor** is in charge of the timing of all the activity of datapath. It is essentially an FSM with 4 states:
 
-- S_idle: state entered after start is asserted. Registers are reset.
-- S_calc: Perform the L2 norm calculation on the currently fetched vector. 
-- S_fetch: fetch the address of the next node in the list using the next node field.
-- S_done: state entered when the whole list has been traversed and the final length and norm have been calculated.
+- **S_idle**: state entered after start is asserted. Registers are reset.
+- **S_calc**: Perform the L2 norm calculation on the currently fetched vector. 
+- **S_fetch**: fetch the address of the next node in the list using the next node field.
+- **S_done**: state entered when the whole list has been traversed and the final length and norm have been calculated.
 
 Note that the current design of the datapath is not fully optimized as a whole clock cycle is being wasted to fetch the address of the next node in the list. An optimized version is in progress...
 
