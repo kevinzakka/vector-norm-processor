@@ -23,7 +23,7 @@ Each node in the list contains 4 words: the first two contain the next and previ
 Each word in memory is 24 bits wide. These bits are divided into 3 fields: the sign, the exponent and the mantissa. However note that since we are squaring the components of the vector when performing our calculations, the sign bit field can be ignored (the square of a number is always positive).
 
 <p align="center">
- <img src="./img/word.PNG" width="400px">
+ <img src="./img/word.PNG" width="350px">
 </p>
 
 ## File Hierarchy
