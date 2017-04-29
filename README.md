@@ -15,5 +15,5 @@ This is a **Verilog** implementation of a Vector Norm List Processor. The VNLP p
 The x and y values of the vector are stored in memory in the form of a doubly linked-list data structure shown below.
 
 <p align="center">
- <img src="./img/linked_list.PNG" width="400px">
+ <img src="./img/linked_list.PNG" width="600px">
 </p>
