@@ -34,10 +34,10 @@ module VNLP (i, norm2, len, the_state, done, clk, start);
 
 	// submodules
 	Datapath M0			(next, norm2, len, A1, A2, clk, D1, D2, PC_out, 
-						 rst_PC, rst_Length, rst_ALU, ld_Result_Acc, ld_PC, 
-						 inc_Length, Sel_Mux_1, PC_in, done, o_PC_plus2, o_PC_plus3, 
-						 i_PC_plus2, i_PC_plus3);
-	Controller M1		(i, the_state, done, rst_PC, rst_Length, rst_ALU, ld_Result_Acc,
-						 ld_PC, inc_Length, Sel_Mux_1, clk, start, next);
+					 rst_PC, rst_Length, rst_ALU, ld_Result_Acc, ld_PC, 
+					 inc_Length, Sel_Mux_1, PC_in, done, o_PC_plus2, o_PC_plus3, 
+					 i_PC_plus2, i_PC_plus3);
+	Controller M1			(i, the_state, done, rst_PC, rst_Length, rst_ALU, ld_Result_Acc,
+					 ld_PC, inc_Length, Sel_Mux_1, clk, start, next);
 	Memory M2			(D1, D2, A1, A2);
 endmodule
