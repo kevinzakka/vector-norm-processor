@@ -26,6 +26,8 @@ Each word in memory is 24 bits wide. These bits are divided into 3 fields: the s
  <img src="./img/word.PNG" width="350px">
 </p>
 
+The user can choose to obtain full precision, or reduce the output to the same format as that in memory (i.e. 24 bit format). This is done by asserting the full_prec signal in the VNLP module which outputs the L2 norm with full precision at the **norm2_full** port.
+
 ## File Hierarchy
 
     │----HDL
