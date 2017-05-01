@@ -56,7 +56,7 @@ There are 4 main components that define the architecture of this design:
 - **Datapath**: implements the datapath
 - **Control**: implements the controller
 
-The **Datapath** consists of registers, control signals, multiplexors and a floating point unit capable of performing multiplication (squaring) and addition on its operands. 
+The **Datapath** consists of registers, control signals, multiplexors and a floating point unit capable of performing multiplication (squaring) and addition on its operands. You can view it by clicking [here](https://github.com/kevinzakka/vector_norm_processor/blob/master/datapath.pdf). 
 
 Meanwhile, the **Processor** is in charge of the timing of all the activity of datapath. It is essentially an FSM with 4 states:
 
