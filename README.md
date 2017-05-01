@@ -39,13 +39,16 @@ Each word in memory is 24 bits wide. These bits are divided into 3 fields: the s
     │     │---- ...
     │
     │---- Scripts
+    |
+    |
+    |---- Results
     
     
 HDL contains the verilog code for each module used in the design of the code. For example, Datapath makes use of a multiplexor, a D flip-flop and hence, there is a separate Verilog code for each of those: **Mux_2ch.v**, **D_flop.v**, etc.
 
 There isn't a test bench file for each module, rather the 2 most important units in the code and their associated submodules: the floating point unit **norm_adder** which contains 2 multipliers, 2 adders and a D flip-flop (for accumulating the norm).
 
-Finally, **Scripts** contains the Python files which can be leveraged to quickly check test_benches and create 24 bit representations of any number the user would like to test. I'll be including a seperate README file for the python scripts in the future.
+Finally, **Scripts** contains the Python files which can be leveraged to quickly check test_bench outputs which are stored in **Results** and create 24 bit representations of any number the user would like to test. I'll be including a seperate README file for the python scripts in the future.
     
 ## Implementation
 
