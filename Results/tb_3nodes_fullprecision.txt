@@ -1,0 +1,4 @@
+time =        0.0ns, done=x, len=  x, norm2_full=xxxxxxxxx_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx, norm2=x_xxxxxxxx_xxxxxxxxxxxxxxx
+time =        8.0ns, done=0, len=  x, norm2_full=xxxxxxxxx_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx, norm2=x_xxxxxxxx_xxxxxxxxxxxxxxx
+time =      150.0ns, done=1, len=  3, norm2_full=xxxxxxxxx_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx, norm2=0_00001111_101010001111101
+time =      160.0ns, done=1, len=  3, norm2_full=000001111_101010001111101110011001100000, norm2=0_00001111_101010001111101
