@@ -8,7 +8,7 @@ module fp_adder_tb();
 		.a_original(a),
 		.b_original(b),
 		.sum(sum),
-		.khara(kh)
+		.kh(kh)
 	);
 
 	// load values
